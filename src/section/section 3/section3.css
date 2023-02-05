@@ -1,0 +1,115 @@
+.section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    gap: 70px;
+}
+
+.section3 .akademika{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 100%;
+}
+
+.section3 .akademika .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 10px;
+    width: 100%;
+}
+
+.section3 .akademika .header .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin-bottom: -20px;
+    height: 100%;
+    gap: 5px;
+    width: 789px;
+}
+
+.section3 .akademika .header .buttoncol{
+}
+
+.section3 .akademika .header .text h6{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.05em;
+    color: #121926;
+}
+
+.section3 .akademika .header .text h2{
+    font-family: 'Montserrat';
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 59px;
+    /* identical to box height */
+
+    letter-spacing: -0.05em;
+
+    /* typho */
+
+    color: #121926;
+}
+
+.section3 .akademika .header .text p{
+    font-family: 'Montserrat';
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    /* or 219% */
+
+
+    /* paragraph */
+
+    color: #444444;
+}
+
+.section3 .akademika .image{
+    width: 100%;
+    overflow: hidden;
+    background-color: #E4F7FF;
+    transition: 350ms ease;
+    border-radius: 34px;
+    height: 584px;
+    cursor: pointer;
+}
+
+.section3 .akademika .image img{
+    width: 100%;
+    position: relative;
+    left: 0%;
+    transition: 350ms ease;
+
+}
+
+.section3 .akademika .image:hover img{
+    width: 120%;
+    transition: 350ms ease;
+    position: relative;
+    left: -10%;
+    
+}
+
+@media (max-width: 414px){ 
+    .section3 {
+        overflow: hidden;
+    }
+}

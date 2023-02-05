@@ -1,0 +1,83 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 30px;
+    gap: 30px;
+    width: 384px;
+    height: 577px;
+    background: #FFFFFF;
+    box-shadow: 30px 30px 65px rgba(0, 96, 240, 0.1);
+    border-radius: 30px;
+    border-color: white;
+}
+
+.card .img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 344px;
+    height: 198px;
+
+    background: #FFF2DF;
+    border-radius: 20px;
+}
+
+
+.card .text{
+    
+}
+
+.card .text h5{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+
+    letter-spacing: -0.05em;
+
+    /* typho */
+
+    color: #121926;
+}
+
+.card .text p{
+    width: 324px;
+    height: 210px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    /* or 219% */
+
+    text-align: center;
+
+    /* paragraph */
+
+    color: #444444;
+
+}
+
+.card .text p span{
+    font-weight: 700;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 35px;
+    /* or 219% */
+
+    text-align: center;
+
+    /* primary */
+
+    color: #2D81FF;
+}

@@ -1,0 +1,78 @@
+.section4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    gap: 60px;
+    isolation: isolate;
+    position: relative;
+    overflow: hidden;
+}
+
+.section4 .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+}
+
+.section4 .text h5{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 59px;
+    /* identical to box height */
+
+    letter-spacing: -0.05em;
+
+    /* typho */
+
+    color: #121926;
+}
+
+.section4 .text p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    /* identical to box height, or 175% */
+
+    text-align: center;
+
+    /* paragraph */
+
+    color: #444444;
+}
+
+.section4 .foto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 70px;
+}
+
+.section4 .foto img {
+    width: 218px;
+}
+
+.section4 .foto img:nth-child(3) {
+    width: 101px;
+}
+
+.section4 .foto img:nth-child(4) {
+    width: 91px;
+}
+
+.section4 .BG {
+    position: absolute;
+    width: 1239px;
+    height: 1239px;
+    top: 0;
+    right: 0;
+}

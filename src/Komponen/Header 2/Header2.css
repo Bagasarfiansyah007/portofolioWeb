@@ -1,0 +1,169 @@
+.navbar{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 100px;
+    height: 85px;
+    position: fixed;
+    z-index: 99999;
+}
+.container-nav{
+    width: 100%;
+}
+
+.container-nav .row1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-nav .col4{
+    height: 100%;
+}
+
+.container-nav .brand{
+    display: flex;
+    list-style: none;
+    width: 20%;
+    padding: 0;
+    padding-top: 0;
+    margin: 0;
+}
+
+.container-nav .brand h5{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    letter-spacing: -0.05em;
+}
+
+.container-nav .col4{
+}
+
+.container-nav .navlink{
+    width: 60%;
+}
+
+.navbar .container-nav .btn-nav{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 3.26px;
+}
+
+.navbar .container-nav .btn-nav span:nth-child(1){
+    width: 26.09px;
+    height: 3.26px;
+    background: #121926;
+    border-radius: 20.2174px;
+    display: block;
+}
+
+.navbar .container-nav .btn-nav span:nth-child(2){
+    width: 18.26px;
+    height: 3.26px;
+    background: #121926;
+    border-radius: 20.2174px;
+    display: block;
+ }
+
+ .navbar .container-nav .btn-nav span:nth-child(3){
+    width: 9.13px;
+    height: 3.26px;
+    background: #121926;
+    border-radius: 20.2174px;
+    display: block;
+ }
+
+
+
+.container-nav .navlink ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    gap: 30px;
+    text-decoration: none;
+
+}
+
+.container-nav .navlink ul li{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    transition: 350ms ease;
+    cursor: pointer;
+}
+.container-nav .navlink ul li a{
+    text-decoration: none;
+    color: #121926;
+    transition: 350ms ease;
+}
+
+
+.container-nav .navlink ul li a:hover{
+    color: #2D81FF;
+    font-weight: 700;
+    transition: 350ms ease;
+}
+
+.container-nav .navlink ul li .mati{
+    color: #121926;
+    transition: 350ms ease;
+}
+
+.container-nav .navlink ul .nyala{
+    color: #2D81FF;
+    font-weight: 700;
+    transition: 350ms ease;
+}
+
+.container-nav .col4:nth-child(4){
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+}
+
+@media (max-width: 414px){ 
+    .navbar{
+        width: 100%;
+        padding: 20px 20px;
+        border: 1px solid black;
+    }
+    .navbar .container-nav{
+        width: 100%;
+    }
+
+    .navbar .container-nav .row1{
+        width: 100%;
+    }
+
+    .navbar .container-nav .brand{
+        width: 100% ;
+    }
+
+    .navbar .container-nav .brand h5{
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .navbar .container-nav .navlink{
+        display: none;
+    }
+    .navbar .container-nav .btn-nav{
+        display: flex;
+    }
+    .navbar .container-nav .col4:nth-child(4){
+        display: none;
+    }
+
+}
