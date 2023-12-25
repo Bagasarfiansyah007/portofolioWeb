@@ -1,19 +1,21 @@
 import './section5.css';
 import React from 'react';
+import Button from '../../Komponen/Button/Button';
 import { FiMail } from 'react-icons/fi';
 import { FiPhone } from 'react-icons/fi';
 import { FiMapPin } from 'react-icons/fi';
-
 
 class Section5 extends React.Component {
     
     render() {
         
         return (
-            <div className='section5'>
+            <div id="contact" className='section5'>
                 <div className='text'>
                     <h5><span>Interest?</span> Let's Get In Touch!</h5>
-                    <p>want to know more? contact me via email or fill in the following email form for business needs or other things!</p>
+                    <p>want to know more? contact me via email or fill in the following email form for business needs or other things!
+                        <br></br><span style={{color:"#2D81FF", fontWeight:700}}>The function send email, is not ready yet!</span>
+                    </p>
                 </div>
                 <form className='formEmail'>
                     <div className='form-group'>
@@ -24,11 +26,14 @@ class Section5 extends React.Component {
                     </div>
                     <div className='form-group form-group-button'>
                         <input type="pesan" class="form-control" id="pesan" placeholder='Message'></input>
-                        <button type="submit" class="btn btn-primary">
-                            <FiMail className='icon' size={24}/>
-                        </button>
+                        <a target="_blank" rel="noopener noreferrer" href='mailto:bagasarfiansyah007@gmail.com'>
+                            <button class="btn btn-primary">
+                                <FiMail className='icon' size={24}/>
+                            </button>
+                        </a>
                     </div>
                 </form>
+
                 <div className='maps'>
                     <div className='maplayout'>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3074993476007!2d107.62949671441652!3d-6.973001670215196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9adf177bf8d%3A0x437398556f9fa03!2sUniversitas%20Telkom!5e0!3m2!1sid!2sid!4v1675500632779!5m2!1sid!2sid"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

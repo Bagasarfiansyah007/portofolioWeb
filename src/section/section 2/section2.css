@@ -4,7 +4,14 @@
     display: flex;
     justify-content: center;
     position: relative;
+    height: 100%;
     z-index: 0;
+    transition: 1s all ease;
+}
+
+.section2.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .section2 .container{
@@ -66,6 +73,7 @@
 .section2 .container .cards .row{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
     padding: 0px;
@@ -80,8 +88,86 @@
     z-index: 10%;
 }
 
+@media (max-width: 1024px){ 
+    .section2 {
+        padding: 0px 0px;
+    }
+
+    .section2 .container .row .col1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0px;
+        gap: 50px;
+    }
+    .section2 .container{
+        padding: 0;
+    }
+    .section2 .container .row{
+        padding: 0;
+        width: 100%;
+    }
+    .section2 .container .col-sm-12{
+        padding: 0;
+        width: 100%;
+
+    }
+    .section2 .container .text1{
+        padding: 0px 100px;
+        width: 100%;
+    }
+    .section2 .container .cards .row{
+        padding: 40px 0px 100px 0px;
+        width: 100%;
+        margin: 0;
+        overflow: scroll;
+
+    }
+}
+
+@media (max-width: 768px){ 
+    .section2 .container .text1{
+        padding: 0px 50px;
+        width: 100%;
+    }
+}
+
 @media (max-width: 414px){ 
     .section2 {
         overflow: hidden;
+        padding: 0;
+        padding-top: 60px;
     }
+    .section2 .container .row{
+    }
+    .section2 .container .row .col1 .text1{
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .section2 .container .row .col1 .text1 h2{
+        width: 100%;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .section2 .container .row .col1 .text1 p{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .section2 .container .row .col1{
+        gap: 50px;
+    }
+
+    .section2 .container .cards .row{
+        height: 100%;
+        overflow: scroll;
+        gap: 10px;
+        align-items: center;
+        padding: 20px;
+        padding-bottom: 60px;
+        padding-top: 30px;
+    }
+
 }

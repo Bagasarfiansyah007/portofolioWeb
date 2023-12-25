@@ -23,3 +23,18 @@
     line-height: 35px;    
     color: white;
 }
+
+@media (max-width: 414px){ 
+    .button2 {
+        padding: 10px 20px;
+        gap: 10px;
+
+        width: 150px;
+        height: 40px;
+    }
+    .button2 h6{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

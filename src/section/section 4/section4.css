@@ -7,6 +7,8 @@
     isolation: isolate;
     position: relative;
     overflow: hidden;
+    position: relative;
+    z-index: 0;
 }
 
 .section4 .text{
@@ -55,18 +57,30 @@
     align-items: center;
     padding: 0px;
     gap: 70px;
+    position: relative;
+    z-index: 11;
 }
 
-.section4 .foto img {
+.section4 .foto ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 70px;
+    position: relative;
+    z-index: 11;
+ }
+
+.section4 .foto ul img:nth-child(1) {
     width: 218px;
 }
 
-.section4 .foto img:nth-child(3) {
-    width: 101px;
-}
-
-.section4 .foto img:nth-child(4) {
-    width: 91px;
+.section4 .foto ul img:nth-child(2) {
+    width: 218px;
 }
 
 .section4 .BG {
@@ -75,4 +89,83 @@
     height: 1239px;
     top: 0;
     right: 0;
+    z-index: -10;
+}
+
+@media (max-width: 1024px){ 
+    .section4, .section4 .foto{
+    }
+    .section4 .foto{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){ 
+    .section4{
+        padding: 0;
+        gap: 20px;
+    }
+    .section4 .text{
+        padding: 0px 50px 0px 50px;
+    }
+    .section4 .foto{
+        width: 100%;
+        padding: 0px 50px 50px 50px;
+        overflow: scroll;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 414px){ 
+    .section4 {
+        padding: 60px 0px 40px;
+        gap: 35px;
+        width: 100%;
+    }
+
+    .section4 .text {
+        padding:0px 20px ;
+    }
+
+    .section4 .text h5{
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .section4 .text p{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .section4 .text{
+        gap: 10px;
+    }
+    .section4 .foto {
+        position: relative;
+        gap: 30px;
+        justify-content: center;
+        overflow: hidden;
+        width:100%;z-index: 1;
+        padding: 0;
+    }
+    .section4 .foto ul{
+       list-style: none;
+       width: 100%;
+       padding-left: 20px;
+       display: flex;
+       flex-direction: row;
+       padding: 0;
+       margin: 0;
+       flex-wrap: nowrap;
+       align-items: center;
+       gap: 30px;
+       padding: 0px 20px;
+       overflow: scroll;
+    }
+    .section4 .foto ul li{
+        padding: 20px 0px;
+    }       
 }

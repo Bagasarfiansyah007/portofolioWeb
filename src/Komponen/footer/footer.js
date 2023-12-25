@@ -12,7 +12,7 @@ class Footer extends React.Component {
             <div className='footer'>
                 <div className='logo'>
                     <h4>Bagas.</h4>
-                    <p>You can download my resume, to look the detail of my experience and achievement as UI/UX Designer. Click this to see more detail!</p>
+                    <p>You can download my resume, to look the detail of my experience and achievement as UI/UX Designer. <a target="_blank" rel="noopener noreferrer" style={{textDecoration:"none", color:"#2D81FF", fontWeight:700}} href="https://drive.google.com/file/d/1L2vv6lIwgEic-NX91fO4tKFr9xcKVEcD/view?usp=sharing">Click this to see more detail!</a></p>
                 </div>
                 <div className='informasi'>
                     <div className='portofolio kol3'>
@@ -35,16 +35,16 @@ class Footer extends React.Component {
                     <div className='conten kol3'>
                         <h6>content</h6>
                         <ul>
-                            <a href='#'>
+                            <a href='#hero'>
                                 <li>Home</li>
                             </a>
-                            <a href='#'>
+                            <a href='#about'>
                                 <li>About me</li>
                             </a>
-                            <a href='#'>
+                            <a href='#porto'>
                                 <li>Portofolio</li>
                             </a>
-                            <a href='#'>
+                            <a href='#contact'>
                                 <li>Contact</li>
                             </a>
                         </ul>
@@ -52,25 +52,25 @@ class Footer extends React.Component {
                     <div className='socialmedia kol3'>
                         <h6>Social Media</h6>
                         <ul>
-                            <a href='#'>
+                            <a target="_blank" rel="noopener noreferrer" href="https://wa.me/6289630049636">
                                 <li>
                                    <FiPhone size={24}></FiPhone> 
-                                   Bagas Arfiansyah
+                                   089630049636
                                 </li>
                             </a>
-                            <a href='#'>
+                            <a target="_blank" rel="noopener noreferrer" href="https://dribbble.com/BagasArfiansyah007">
                                 <li>
                                     <FiDribbble size={24}></FiDribbble> 
-                                    089630049636
+                                    Bagas Arfiansyah 
                                 </li>
                             </a>
-                            <a href='#'>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/baarf1501/?hl=id">
                                 <li>
                                     <FiInstagram size={24}></FiInstagram> 
                                     baarf1501
                                 </li>
                             </a>
-                            <a href='#'>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/bagas-arfiansyah-b36301179/">
                                 <li>
                                     <FiLinkedin size={24}></FiLinkedin> 
                                     Bagas Arfiansyah

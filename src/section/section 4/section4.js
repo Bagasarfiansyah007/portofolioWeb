@@ -1,5 +1,7 @@
 import './section4.css';
 import React from 'react';
+import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
+
 
 class Section4 extends React.Component {
     
@@ -20,15 +22,24 @@ class Section4 extends React.Component {
             )
         }
 
+    
         return (
-            <div className='section4'>
+            
+                
+            <div id="experience" className='section4'>
                 <div className='text'>
                     <h5>My Experience</h5>
                     <p>I work as a UI/UX Designer for more than 1 year in several companies</p>
                 </div>
                 <div className='foto'>
-                    {images}
+                    <ul>
+                        <li><img src={image[0]}></img></li>
+                        <li><img src={image[1]}></img></li>
+                        <li><img style={{width:101}} src={image[2]}></img></li>
+                        <li><img style={{width:91}} src={image[3]}></img></li>
+                    </ul>
                 </div>
+                
                 <img className='BG' src='https://raw.githubusercontent.com/Bagasarfiansyah007/Portofolio-asset/main/BG.webp'></img>
             </div>
         );

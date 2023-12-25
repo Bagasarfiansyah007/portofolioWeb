@@ -24,3 +24,22 @@
     letter-spacing: -0.03em;
     color: white;
 }
+
+@media (max-width: 1024px){ 
+    .button{
+        padding: 12px;
+    }
+    .button h6{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: -0.03em;
+        color: white;
+    }
+}
+
+@media (max-width: 768px){ 
+    
+}

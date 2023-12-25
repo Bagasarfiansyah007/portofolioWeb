@@ -29,7 +29,7 @@ class Section2 extends React.Component {
             </p>,
           ]
         return (
-            <div className='section2'>
+            <div id="about" onScroll={this.props.fungsi} className='section2'>
               <div className='container'>
                 <div style={divStyle} className='row'>
                   <div style={divStyle} className='col-sm-12 col1 text-center'>
@@ -70,6 +70,8 @@ class Section2 extends React.Component {
               <img className='bg' src='https://raw.githubusercontent.com/Bagasarfiansyah007/Portofolio-asset/main/BG.webp'></img>
             </div>
         );
+
+        
     }
 }
 

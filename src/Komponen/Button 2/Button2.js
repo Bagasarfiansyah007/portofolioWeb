@@ -12,7 +12,7 @@ class Button2 extends React.Component {
             color: this.props.warnaFont
         }
         return (
-            <a href={this.props.alamat}>
+            <a target="_blank" rel="noopener noreferrer" href={this.props.alamat}>
                 <div style={divStyle} className='button2'>
                     <h6 style={warnafont}>{this.props.nama}</h6>
                 </div>

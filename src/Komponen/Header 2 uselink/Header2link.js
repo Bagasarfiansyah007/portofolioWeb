@@ -1,7 +1,7 @@
-import './Header2.css';
+import './Header2link.css';
 import React from 'react';
 import Button from '../Button/Button';
-import Button2 from '../../Komponen/Button 2/Button2';
+import Button2 from '../Button 2/Button2';
 import Footer from '../footer/footer';
 import { FiInstagram } from 'react-icons/fi';
 import { FiMail } from 'react-icons/fi';
@@ -10,7 +10,7 @@ import { FiPhone } from 'react-icons/fi';
 import { FiDribbble } from 'react-icons/fi';
 import { Link } from "react-router-dom";
 
-class Header2 extends React.Component {
+class Header2link extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -36,10 +36,10 @@ class Header2 extends React.Component {
                         </div>
                         <div className='col4 navlink'>
                             <ul>
-                                <li id='list'><a href={this.props.homeAlamat}>Home</a></li>
-                                <li id='list'><a href={this.props.aboutAlamat}>About</a></li>
+                                <li id='list'><Link to="/">Home</Link></li>
+                                <li id='list'><Link to="/">About</Link></li>
                                 <li id='list'><Link to="/porto">Portofolio</Link></li>
-                                <li id='list'><a href={this.props.contactAlamat}>Contact</a></li>
+                                <li id='list'><Link to="/">Contact</Link></li>
                             </ul>
                         </div>
                         <div onClick={this.toggleClass.bind(this)} className={btn_class}>         
@@ -56,10 +56,10 @@ class Header2 extends React.Component {
                     
                     <div className='navlinkMobile'>
                         <ul>
-                            <li onClick={this.toggleClass.bind(this)} id='list'><a href={this.props.homeAlamat}>Home</a></li>
-                            <li onClick={this.toggleClass.bind(this)} id='list'><a href={this.props.aboutAlamat}>About</a></li>
-                            <li onClick={this.toggleClass.bind(this)} id='list'><Link to="/porto">Portofolio</Link></li>
-                            <li onClick={this.toggleClass.bind(this)} id='list'><a href={this.props.contactAlamat}>Contact</a></li>
+                            <li onClick={this.toggleClass.bind(this)} id='list'><Link to="/">Home</Link></li>
+                            <li onClick={this.toggleClass.bind(this)} id='list'><Link to="/">About</Link></li>
+                            <li onClick={this.toggleClass.bind(this)} id='list'><Link to="/">Portofolio</Link></li>
+                            <li onClick={this.toggleClass.bind(this)} id='list'><Link to="/">Contact</Link></li>
                         </ul>
                     </div>
 
@@ -67,7 +67,7 @@ class Header2 extends React.Component {
                     <div className='footer'>
                         <div className='logo'>
                             <h4>Bagas.</h4>
-                            <p>You can download my resume, to look the detail of my experience and achievement as UI/UX Designer.<a target="_blank" rel="noopener noreferrer" href='https://drive.google.com/file/d/1L2vv6lIwgEic-NX91fO4tKFr9xcKVEcD/view?usp=sharing'> Click this to see more detail! </a></p>
+                            <p>You can download my resume, to look the detail of my experience and achievement as UI/UX Designer. <a target="_blank" rel="noopener noreferrer" href='https://drive.google.com/file/d/1L2vv6lIwgEic-NX91fO4tKFr9xcKVEcD/view?usp=sharing'> Click this to see more detail! </a></p>
                         </div>
                         <div className='informasi'>
                             <div className='socialmedia kol3'>
@@ -107,4 +107,4 @@ class Header2 extends React.Component {
     }
 }
 
-export default Header2;
+export default Header2link;
