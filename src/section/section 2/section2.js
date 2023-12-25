@@ -35,10 +35,7 @@ class Section2 extends React.Component {
                   <div style={divStyle} className='col-sm-12 col1 text-center'>
                     <div className='text1'>
                       <h2>About me</h2>
-                      <p>I am a Software engineering student who is interested to UI/UX Design, 
-                        Front-end Developer, and Mobile Developer. I also do a lot of internships 
-                        and work as a full-time UI/UX Designer who is engaged in the Software 
-                        Engineering process. <span>Here’s the skill that I have:</span></p>
+                      <p>UI/UX Designer with over +1 year experience, fueled by unwavering passion for shaping the future of digital product development. <span>Here’s the skill that I have:</span></p>
                     </div>
                     <div className='cards'>
                       <div className='container-fluid'>

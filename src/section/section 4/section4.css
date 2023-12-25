@@ -59,6 +59,8 @@
     gap: 70px;
     position: relative;
     z-index: 11;
+    width: 100%;
+    overflow: hidden;
 }
 
 .section4 .foto ul{
@@ -70,7 +72,8 @@
     margin: 0;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 70px;
+    gap: 40px;
+    overflow: hidden;
     position: relative;
     z-index: 11;
  }
